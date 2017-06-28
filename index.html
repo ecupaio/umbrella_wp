@@ -40,8 +40,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
-
-
      <link rel='dns-prefetch' href='//s.w.org' />
 		<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/ecupaio.github.io\/umbrella_wp\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8"}};
@@ -61,6 +59,7 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
+<script type='text/javascript' src='https://ecupaio.github.io/umbrella_wp/wp-content/themes/umbrella/js/theme_functions.min.js?ver=4.8'></script>
 <link rel='https://api.w.org/' href='https://ecupaio.github.io/umbrella_wp/wp-json/' />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ecupaio.github.io/umbrella_wp/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://ecupaio.github.io/umbrella_wp/wp-includes/wlwmanifest.xml" /> 
@@ -246,33 +245,40 @@ img.emoji {
             </div>
 
         </div>
-        <div class="contact-form">
-            <div class="g-form">
-                <form action="https://docs.google.com/forms/d/e/1FAIpQLSee9BCd8Oehab4HdRXyS235gDHZHekMl4VyeFRM5bpKE5zflw/formResponse" target="_self" method="POST" id="mG61Hd">
+        <div class="contact-form-bg">
+            <div class="form-container">
+                <div class="form-success">
+                    <div class="form-success-text">
+                                                <h3>Thanks!</h3>
+<p>We will get back to you soon.</p>
+                    </div>
+                </div>
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLSee9BCd8Oehab4HdRXyS235gDHZHekMl4VyeFRM5bpKE5zflw/formResponse" class="contact-form" method="POST" id="mG61Hd">
                     <!-- Name -->
                     <div class="form-field">
-                        <input type="text" class="quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Name" aria-describedby="i.desc.814480587 i.err.814480587" name="entry.716104746"
-                            value="" dir="auto" data-initial-dir="auto" data-initial-value="" placeholder="Name">
+                        <input type="text" class="quantumWizTextinputPaperinputInput exportInput contact-name" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Name" aria-describedby="i.desc.814480587 i.err.814480587" name="entry.716104746"
+                            value="" dir="auto" data-initial-dir="auto" data-initial-value="" required placeholder="Name">
                     </div>
                     <!-- Email -->
                     <div class="form-field">
-                        <input type="text" class="quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Email" aria-describedby="i.desc.1517604728 i.err.1517604728" name="entry.1479226033"
-                        value="" dir="auto" data-initial-dir="auto" data-initial-value="" placeholder="Email">
+                        <input type="email" class="quantumWizTextinputPaperinputInput exportInput contact-email" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Email" aria-describedby="i.desc.1517604728 i.err.1517604728" name="entry.1479226033"
+                        value="" dir="auto" data-initial-dir="auto" data-initial-value="" required placeholder="Email">
                     </div>
                     <!-- Phone -->
                     <div class="form-field">
-                        <input type="text" class="quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Phone" aria-describedby="i.desc.317830038 i.err.317830038" name="entry.2096412461"
-                        value="" dir="auto" data-initial-dir="auto" data-initial-value="" placeholder="Phone">
+                        <input type="text" class="quantumWizTextinputPaperinputInput exportInput contact-phone" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Phone" aria-describedby="i.desc.317830038 i.err.317830038" name="entry.2096412461"
+                        value="" dir="auto" data-initial-dir="auto" data-initial-value=""  placeholder="Phone" required pattern="\d{3}[\-]\d{3}[\-]\d{4}" oninvalid="this.setCustomValidity('Please enter a valid phone number format: 555-555-5555')" onchange="this.setCustomValidity('')">
                     </div>
                     <!-- Question -->
                     <div class="form-field">
-                        <textarea placeholder="How can I help you?" class="quantumWizTextinputPapertextareaInput exportTextarea" jsname="YPqjbf" rows="5" data-rows="1" tabindex="0" aria-label="Question" jscontroller="gZjhIf" jsaction="input:Lg5SV;ti6hGc:XMgOHc;rcuQ6b:WYd;" name="entry.455393523" dir="auto" data-initial-dir="auto" data-initial-value=""></textarea>
+                        <textarea placeholder="How can I help you?" class="quantumWizTextinputPapertextareaInput exportTextarea contact-text" jsname="YPqjbf" rows="5" data-rows="1" tabindex="0" aria-label="Question" jscontroller="gZjhIf" required jsaction="input:Lg5SV;ti6hGc:XMgOHc;rcuQ6b:WYd;" name="entry.455393523" dir="auto" data-initial-dir="auto" data-initial-value=""></textarea>
                     </div>
                     <!-- Submit -->
                     <div class="form-field">
                         <button type="submit" class="submit pure-button">Submit</button>
                     </div>
                 </form>
+
             </div>
         </div>
     </div>
@@ -282,9 +288,9 @@ img.emoji {
  <div class="footer-menu">
 
      <div class="social-links">
-				<a class="social-link" target="_blank" href="https://www.facebook.com/umbrellaconsultingllc/" data-social="facebook"></a>
-				<a class="social-link" target="_blank" href="https://www.linkedin.com/company-beta/10696348/" data-social="linkedin"></a>
-				<a class="social-link" target="_blank" href="https://twitter.com/umbrella_dc" data-social="twitter"></a>
+				<a class="social-link" target="_blank" href="https://www.facebook.com/umbrellaconsultingllc/"></a>
+				<a class="social-link" target="_blank" href="https://www.linkedin.com/company-beta/10696348/"></a>
+				<a class="social-link" target="_blank" href="https://twitter.com/umbrella_dc"></a>
 			</div>
 
  </div>
@@ -292,6 +298,5 @@ img.emoji {
      Made with <i class="fa fa-heart"></i> by <a href="https://edcupaioli.com/">Ed Cupaioli <i class="fa fa-copyright"></i></a>
  </div>
 </div>
-<script type='text/javascript' src='https://ecupaio.github.io/umbrella_wp/wp-content/themes/umbrella/js/theme_functions.min.js?ver=4.8'></script>
 <script type='text/javascript' src='https://ecupaio.github.io/umbrella_wp/wp-includes/js/wp-embed.min.js?ver=4.8'></script>
 </body>
